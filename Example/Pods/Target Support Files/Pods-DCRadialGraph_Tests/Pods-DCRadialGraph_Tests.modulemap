@@ -1,0 +1,6 @@
+framework module Pods_DCRadialGraph_Tests {
+  umbrella header "Pods-DCRadialGraph_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

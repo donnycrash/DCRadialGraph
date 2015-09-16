@@ -1,0 +1,778 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		32A4B5C076B03B1157ED7D4548673081 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92D6C2C3E6057E45AF8842A8D3A448AA /* Foundation.framework */; };
+		367647646CEA3D5315ABF5276DB3A2C3 /* Pods-DCRadialGraph_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FC2530D16FB3724ED0518084563D5593 /* Pods-DCRadialGraph_Tests-dummy.m */; };
+		3942BD0124FDBE3564B197DDFFCFBC0C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92D6C2C3E6057E45AF8842A8D3A448AA /* Foundation.framework */; };
+		465FB250E84DF664DB497D0CAB7FF8AF /* DCRadialGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8173489639432CB652B72DE8567449EB /* DCRadialGraph.swift */; };
+		5496C9B8507C0A1213AA0AA737D6ECBA /* DCRadialGraph.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A84CDEF3632D24EC89F8BCE067E1FA71 /* DCRadialGraph.bundle */; };
+		77BB2ECA6824321D170579DC6A59C489 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92D6C2C3E6057E45AF8842A8D3A448AA /* Foundation.framework */; };
+		7DCB7AB180695A68781730AE87E175C9 /* Pods-DCRadialGraph_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D984B6C2A1330EAA301AE10E1EF6511F /* Pods-DCRadialGraph_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8B96C2D86E0F796DC85A105A3D03F40D /* DCRadialGraph-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 683B9F1B435D9F91018955ADA64FA828 /* DCRadialGraph-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9BBDE5DD54BA505B37D62E342922FC7E /* Pods-DCRadialGraph_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CA202549C3B0A95A24EF3DAA6DCD9F1 /* Pods-DCRadialGraph_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CAF752F2C6A37A0B0FBA52C952EB8984 /* DCRadialGraph-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1443DF418C57AB44848D11691CCB3E9E /* DCRadialGraph-dummy.m */; };
+		F10841B19AC36B14E759F80B3BECBD64 /* Pods-DCRadialGraph_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C899D48AB8D2629F38251C9DC348FE /* Pods-DCRadialGraph_Example-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1F59660CD005A42A9D53E79D7DEC375D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2814C38813797BDEB31F5385AA3152C9;
+			remoteInfo = "DCRadialGraph-DCRadialGraph";
+		};
+		692BC7FCB71610C71890C50F309A7FB4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E7A0858DB3561B4371B8A7DABFC3F0CD;
+			remoteInfo = DCRadialGraph;
+		};
+		F5CD4C387A8200AFFEF08205B5EB7DA6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E7A0858DB3561B4371B8A7DABFC3F0CD;
+			remoteInfo = DCRadialGraph;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		022E38E95A1C07BCD8551B3C3440D63C /* DCRadialGraph.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DCRadialGraph.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		09E879105831A4C8CD7875B73FA6DB64 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10D1DCE44A049CDD247DE281D7475E53 /* Pods-DCRadialGraph_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DCRadialGraph_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1443DF418C57AB44848D11691CCB3E9E /* DCRadialGraph-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DCRadialGraph-dummy.m"; sourceTree = "<group>"; };
+		159B83E049F0945182816C7626471CD4 /* Pods_DCRadialGraph_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DCRadialGraph_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		26B3B05386C76DF9CC008B34544A7341 /* Pods-DCRadialGraph_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DCRadialGraph_Example-frameworks.sh"; sourceTree = "<group>"; };
+		2CA202549C3B0A95A24EF3DAA6DCD9F1 /* Pods-DCRadialGraph_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DCRadialGraph_Tests-umbrella.h"; sourceTree = "<group>"; };
+		2E3BE6C8D3DB502906ED91EA64F1D33B /* Pods-DCRadialGraph_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DCRadialGraph_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		48200B7C14D9C36B8E076E1BD9610F31 /* DCRadialGraph.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = DCRadialGraph.modulemap; sourceTree = "<group>"; };
+		52BCDE4AD1D47F9DDB9F1ECAD2DA3582 /* Pods-DCRadialGraph_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DCRadialGraph_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		552DA03404EBA7EB1A277C7D81083822 /* Pods-DCRadialGraph_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DCRadialGraph_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		575650FA6C8FF8299827372256742C13 /* Pods-DCRadialGraph_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DCRadialGraph_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		60C899D48AB8D2629F38251C9DC348FE /* Pods-DCRadialGraph_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DCRadialGraph_Example-dummy.m"; sourceTree = "<group>"; };
+		6483B3725121FC954141B8703D173FCB /* DCRadialGraph.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DCRadialGraph.xcconfig; sourceTree = "<group>"; };
+		683B9F1B435D9F91018955ADA64FA828 /* DCRadialGraph-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DCRadialGraph-umbrella.h"; sourceTree = "<group>"; };
+		747142D2105E1A8C895A773DE9204C62 /* Pods-DCRadialGraph_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DCRadialGraph_Tests-resources.sh"; sourceTree = "<group>"; };
+		7AD1860DCB592704A59D1214BBF16A61 /* Pods-DCRadialGraph_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DCRadialGraph_Example-resources.sh"; sourceTree = "<group>"; };
+		80D1CDC2C0BABE81C997DB0372B93A31 /* Pods-DCRadialGraph_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DCRadialGraph_Example.release.xcconfig"; sourceTree = "<group>"; };
+		8173489639432CB652B72DE8567449EB /* DCRadialGraph.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DCRadialGraph.swift; sourceTree = "<group>"; };
+		92D6C2C3E6057E45AF8842A8D3A448AA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		97F92835148235ADC29F66C9640E10F6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7737509BE08F1D5F27F7B340524834D /* Pods_DCRadialGraph_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DCRadialGraph_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A84CDEF3632D24EC89F8BCE067E1FA71 /* DCRadialGraph.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DCRadialGraph.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF5EDCA1BA50AE4CEA83558F78A234F2 /* Pods-DCRadialGraph_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DCRadialGraph_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B7FFF7CFA2215F2D0BC051098ED14885 /* Pods-DCRadialGraph_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DCRadialGraph_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C4CF2DA20DEFF4A14AAAE88A35F98482 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB827D1C946DD1FD16DD9EC8E01F39D1 /* Pods-DCRadialGraph_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DCRadialGraph_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		D295CFD86C8E3A5272F5D0A86073728A /* Pods-DCRadialGraph_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-DCRadialGraph_Example.modulemap"; sourceTree = "<group>"; };
+		D2A29C606E1A0E8676A1381D413C27D6 /* DCRadialGraph-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DCRadialGraph-prefix.pch"; sourceTree = "<group>"; };
+		D984B6C2A1330EAA301AE10E1EF6511F /* Pods-DCRadialGraph_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DCRadialGraph_Example-umbrella.h"; sourceTree = "<group>"; };
+		FC2530D16FB3724ED0518084563D5593 /* Pods-DCRadialGraph_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DCRadialGraph_Tests-dummy.m"; sourceTree = "<group>"; };
+		FF17835303FDD6159916365759EF9B1E /* Pods-DCRadialGraph_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-DCRadialGraph_Tests.modulemap"; sourceTree = "<group>"; };
+		FF1D914134E41604069323CB27245520 /* DCRadialGraph-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "DCRadialGraph-Private.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AE4996053A0B8608A78CDF5CB07F5E6D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3942BD0124FDBE3564B197DDFFCFBC0C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E985B2614A4FF43D0E47E30F612BB7AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F64E570BF9D3E08380BDB036DC1811A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32A4B5C076B03B1157ED7D4548673081 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC7CACDAEC0E87AAA1AF89B57D6291C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77BB2ECA6824321D170579DC6A59C489 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0662624EAFFB5C6134AAA69861347112 /* Pods-DCRadialGraph_Example */ = {
+			isa = PBXGroup;
+			children = (
+				C4CF2DA20DEFF4A14AAAE88A35F98482 /* Info.plist */,
+				D295CFD86C8E3A5272F5D0A86073728A /* Pods-DCRadialGraph_Example.modulemap */,
+				10D1DCE44A049CDD247DE281D7475E53 /* Pods-DCRadialGraph_Example-acknowledgements.markdown */,
+				552DA03404EBA7EB1A277C7D81083822 /* Pods-DCRadialGraph_Example-acknowledgements.plist */,
+				60C899D48AB8D2629F38251C9DC348FE /* Pods-DCRadialGraph_Example-dummy.m */,
+				26B3B05386C76DF9CC008B34544A7341 /* Pods-DCRadialGraph_Example-frameworks.sh */,
+				7AD1860DCB592704A59D1214BBF16A61 /* Pods-DCRadialGraph_Example-resources.sh */,
+				D984B6C2A1330EAA301AE10E1EF6511F /* Pods-DCRadialGraph_Example-umbrella.h */,
+				52BCDE4AD1D47F9DDB9F1ECAD2DA3582 /* Pods-DCRadialGraph_Example.debug.xcconfig */,
+				80D1CDC2C0BABE81C997DB0372B93A31 /* Pods-DCRadialGraph_Example.release.xcconfig */,
+			);
+			name = "Pods-DCRadialGraph_Example";
+			path = "Target Support Files/Pods-DCRadialGraph_Example";
+			sourceTree = "<group>";
+		};
+		53F661C0CA7190D2CF05023FB33D61E4 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				92D6C2C3E6057E45AF8842A8D3A448AA /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7331EEE3C58A223B961863C1CC4BE719 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				48200B7C14D9C36B8E076E1BD9610F31 /* DCRadialGraph.modulemap */,
+				6483B3725121FC954141B8703D173FCB /* DCRadialGraph.xcconfig */,
+				FF1D914134E41604069323CB27245520 /* DCRadialGraph-Private.xcconfig */,
+				1443DF418C57AB44848D11691CCB3E9E /* DCRadialGraph-dummy.m */,
+				D2A29C606E1A0E8676A1381D413C27D6 /* DCRadialGraph-prefix.pch */,
+				683B9F1B435D9F91018955ADA64FA828 /* DCRadialGraph-umbrella.h */,
+				97F92835148235ADC29F66C9640E10F6 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/DCRadialGraph";
+			sourceTree = "<group>";
+		};
+		773901D41D8F04732CF2EEBD5C397C27 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				E7A80765A7BBF8924539E81B25007F99 /* Classes */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				F28A39D409AF0F5F95EC003C09382A49 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				CCA510CFBEA2D207524CDA0D73C3B561 /* Products */,
+				BD22F9EA6C42FB8E1045710BE7835EE6 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		948EC6563AE968D1847A6C3D6B5A8FFF /* DCRadialGraph */ = {
+			isa = PBXGroup;
+			children = (
+				773901D41D8F04732CF2EEBD5C397C27 /* Pod */,
+				7331EEE3C58A223B961863C1CC4BE719 /* Support Files */,
+			);
+			name = DCRadialGraph;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				53F661C0CA7190D2CF05023FB33D61E4 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BD22F9EA6C42FB8E1045710BE7835EE6 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0662624EAFFB5C6134AAA69861347112 /* Pods-DCRadialGraph_Example */,
+				FEBECAC61E6DCB46389DAF1F8D4F2EAB /* Pods-DCRadialGraph_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		CCA510CFBEA2D207524CDA0D73C3B561 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A84CDEF3632D24EC89F8BCE067E1FA71 /* DCRadialGraph.bundle */,
+				022E38E95A1C07BCD8551B3C3440D63C /* DCRadialGraph.framework */,
+				159B83E049F0945182816C7626471CD4 /* Pods_DCRadialGraph_Example.framework */,
+				A7737509BE08F1D5F27F7B340524834D /* Pods_DCRadialGraph_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E7A80765A7BBF8924539E81B25007F99 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				8173489639432CB652B72DE8567449EB /* DCRadialGraph.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		F28A39D409AF0F5F95EC003C09382A49 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				948EC6563AE968D1847A6C3D6B5A8FFF /* DCRadialGraph */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		FEBECAC61E6DCB46389DAF1F8D4F2EAB /* Pods-DCRadialGraph_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				09E879105831A4C8CD7875B73FA6DB64 /* Info.plist */,
+				FF17835303FDD6159916365759EF9B1E /* Pods-DCRadialGraph_Tests.modulemap */,
+				AF5EDCA1BA50AE4CEA83558F78A234F2 /* Pods-DCRadialGraph_Tests-acknowledgements.markdown */,
+				CB827D1C946DD1FD16DD9EC8E01F39D1 /* Pods-DCRadialGraph_Tests-acknowledgements.plist */,
+				FC2530D16FB3724ED0518084563D5593 /* Pods-DCRadialGraph_Tests-dummy.m */,
+				2E3BE6C8D3DB502906ED91EA64F1D33B /* Pods-DCRadialGraph_Tests-frameworks.sh */,
+				747142D2105E1A8C895A773DE9204C62 /* Pods-DCRadialGraph_Tests-resources.sh */,
+				2CA202549C3B0A95A24EF3DAA6DCD9F1 /* Pods-DCRadialGraph_Tests-umbrella.h */,
+				575650FA6C8FF8299827372256742C13 /* Pods-DCRadialGraph_Tests.debug.xcconfig */,
+				B7FFF7CFA2215F2D0BC051098ED14885 /* Pods-DCRadialGraph_Tests.release.xcconfig */,
+			);
+			name = "Pods-DCRadialGraph_Tests";
+			path = "Target Support Files/Pods-DCRadialGraph_Tests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		6DC11400058824EA5592A221F08DACD6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DCB7AB180695A68781730AE87E175C9 /* Pods-DCRadialGraph_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7F33BD2BC9F2E755AE646CBAEEF62D5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B96C2D86E0F796DC85A105A3D03F40D /* DCRadialGraph-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD6D60C37849CFF71B7FB1F76166093F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BBDE5DD54BA505B37D62E342922FC7E /* Pods-DCRadialGraph_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2814C38813797BDEB31F5385AA3152C9 /* DCRadialGraph-DCRadialGraph */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83EDD743DAACC10C74D8C693B365A3CB /* Build configuration list for PBXNativeTarget "DCRadialGraph-DCRadialGraph" */;
+			buildPhases = (
+				DF537404506A9CBAC09CFF8E9BE4B6B5 /* Sources */,
+				E985B2614A4FF43D0E47E30F612BB7AA /* Frameworks */,
+				14C1A72D43A4E1A45423065C7B432481 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DCRadialGraph-DCRadialGraph";
+			productName = "DCRadialGraph-DCRadialGraph";
+			productReference = A84CDEF3632D24EC89F8BCE067E1FA71 /* DCRadialGraph.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		C2312F6D941A931D460CC823DD70E15E /* Pods-DCRadialGraph_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3BC166F8766F968AD0D15B1A20DE9BCC /* Build configuration list for PBXNativeTarget "Pods-DCRadialGraph_Example" */;
+			buildPhases = (
+				73BFB840BAFFD31C467BAD22BDDDF115 /* Sources */,
+				F64E570BF9D3E08380BDB036DC1811A7 /* Frameworks */,
+				6DC11400058824EA5592A221F08DACD6 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				12D64B98A3475E32C1B95304758A0BDB /* PBXTargetDependency */,
+			);
+			name = "Pods-DCRadialGraph_Example";
+			productName = "Pods-DCRadialGraph_Example";
+			productReference = 159B83E049F0945182816C7626471CD4 /* Pods_DCRadialGraph_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C2A019FEFCBDC1EE9566E4A39F6BF1C0 /* Pods-DCRadialGraph_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF3B93D659B94B60DC58483A7A6F8FAF /* Build configuration list for PBXNativeTarget "Pods-DCRadialGraph_Tests" */;
+			buildPhases = (
+				AD465057FB5C5D24A48DE2AA7D96A6A2 /* Sources */,
+				FC7CACDAEC0E87AAA1AF89B57D6291C6 /* Frameworks */,
+				DD6D60C37849CFF71B7FB1F76166093F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4154AC8FEB93CBF5277A2E1E0C7A7560 /* PBXTargetDependency */,
+			);
+			name = "Pods-DCRadialGraph_Tests";
+			productName = "Pods-DCRadialGraph_Tests";
+			productReference = A7737509BE08F1D5F27F7B340524834D /* Pods_DCRadialGraph_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E7A0858DB3561B4371B8A7DABFC3F0CD /* DCRadialGraph */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 071CDD2B352065FAB41EEDEC0C363784 /* Build configuration list for PBXNativeTarget "DCRadialGraph" */;
+			buildPhases = (
+				15D40A16FB49E651A9112CB3A1C149F7 /* Sources */,
+				AE4996053A0B8608A78CDF5CB07F5E6D /* Frameworks */,
+				DBAB771E4AC34D7951BA7A77F6BD0733 /* Resources */,
+				A7F33BD2BC9F2E755AE646CBAEEF62D5 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CABB00534C973FF9227FDC5DE4790E9F /* PBXTargetDependency */,
+			);
+			name = DCRadialGraph;
+			productName = DCRadialGraph;
+			productReference = 022E38E95A1C07BCD8551B3C3440D63C /* DCRadialGraph.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = CCA510CFBEA2D207524CDA0D73C3B561 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E7A0858DB3561B4371B8A7DABFC3F0CD /* DCRadialGraph */,
+				2814C38813797BDEB31F5385AA3152C9 /* DCRadialGraph-DCRadialGraph */,
+				C2312F6D941A931D460CC823DD70E15E /* Pods-DCRadialGraph_Example */,
+				C2A019FEFCBDC1EE9566E4A39F6BF1C0 /* Pods-DCRadialGraph_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		14C1A72D43A4E1A45423065C7B432481 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBAB771E4AC34D7951BA7A77F6BD0733 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5496C9B8507C0A1213AA0AA737D6ECBA /* DCRadialGraph.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		15D40A16FB49E651A9112CB3A1C149F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAF752F2C6A37A0B0FBA52C952EB8984 /* DCRadialGraph-dummy.m in Sources */,
+				465FB250E84DF664DB497D0CAB7FF8AF /* DCRadialGraph.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73BFB840BAFFD31C467BAD22BDDDF115 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F10841B19AC36B14E759F80B3BECBD64 /* Pods-DCRadialGraph_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD465057FB5C5D24A48DE2AA7D96A6A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				367647646CEA3D5315ABF5276DB3A2C3 /* Pods-DCRadialGraph_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF537404506A9CBAC09CFF8E9BE4B6B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		12D64B98A3475E32C1B95304758A0BDB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DCRadialGraph;
+			target = E7A0858DB3561B4371B8A7DABFC3F0CD /* DCRadialGraph */;
+			targetProxy = F5CD4C387A8200AFFEF08205B5EB7DA6 /* PBXContainerItemProxy */;
+		};
+		4154AC8FEB93CBF5277A2E1E0C7A7560 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DCRadialGraph;
+			target = E7A0858DB3561B4371B8A7DABFC3F0CD /* DCRadialGraph */;
+			targetProxy = 692BC7FCB71610C71890C50F309A7FB4 /* PBXContainerItemProxy */;
+		};
+		CABB00534C973FF9227FDC5DE4790E9F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "DCRadialGraph-DCRadialGraph";
+			target = 2814C38813797BDEB31F5385AA3152C9 /* DCRadialGraph-DCRadialGraph */;
+			targetProxy = 1F59660CD005A42A9D53E79D7DEC375D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		10DE1947DAC0ED28F6C0A9F9BD75D546 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		118AEB23367F2C4015F88CFD7C021C13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF1D914134E41604069323CB27245520 /* DCRadialGraph-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 0.1.0;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 0.1.0;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/DCRadialGraph/DCRadialGraph-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DCRadialGraph/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DCRadialGraph/DCRadialGraph.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = DCRadialGraph;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4058C4CABF59262B56A02BE3388AC3B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF1D914134E41604069323CB27245520 /* DCRadialGraph-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = DCRadialGraph;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		552D02D5BA751AC2E8790D2811D496CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		64315AD41AD44A93DD76917181690C14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7FFF7CFA2215F2D0BC051098ED14885 /* Pods-DCRadialGraph_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-DCRadialGraph_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-DCRadialGraph_Tests/Pods-DCRadialGraph_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_DCRadialGraph_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		95D08BF1D7E00673A20E88AB3E638636 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80D1CDC2C0BABE81C997DB0372B93A31 /* Pods-DCRadialGraph_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-DCRadialGraph_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-DCRadialGraph_Example/Pods-DCRadialGraph_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_DCRadialGraph_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BB24B1D7B4770FC763677CDB2C4C98A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF1D914134E41604069323CB27245520 /* DCRadialGraph-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 0.1.0;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 0.1.0;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/DCRadialGraph/DCRadialGraph-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DCRadialGraph/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DCRadialGraph/DCRadialGraph.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = DCRadialGraph;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C24E74DCAB27D9E5EE2CD6DC14DA139A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52BCDE4AD1D47F9DDB9F1ECAD2DA3582 /* Pods-DCRadialGraph_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-DCRadialGraph_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-DCRadialGraph_Example/Pods-DCRadialGraph_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_DCRadialGraph_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F6848E78C6A7B3C555D4508E39788C82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF1D914134E41604069323CB27245520 /* DCRadialGraph-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = DCRadialGraph;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		FC78C4F9F0ECA39B673FE51E1192BB81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 575650FA6C8FF8299827372256742C13 /* Pods-DCRadialGraph_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-DCRadialGraph_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-DCRadialGraph_Tests/Pods-DCRadialGraph_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_DCRadialGraph_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		071CDD2B352065FAB41EEDEC0C363784 /* Build configuration list for PBXNativeTarget "DCRadialGraph" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB24B1D7B4770FC763677CDB2C4C98A2 /* Debug */,
+				118AEB23367F2C4015F88CFD7C021C13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				552D02D5BA751AC2E8790D2811D496CA /* Debug */,
+				10DE1947DAC0ED28F6C0A9F9BD75D546 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3BC166F8766F968AD0D15B1A20DE9BCC /* Build configuration list for PBXNativeTarget "Pods-DCRadialGraph_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C24E74DCAB27D9E5EE2CD6DC14DA139A /* Debug */,
+				95D08BF1D7E00673A20E88AB3E638636 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83EDD743DAACC10C74D8C693B365A3CB /* Build configuration list for PBXNativeTarget "DCRadialGraph-DCRadialGraph" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4058C4CABF59262B56A02BE3388AC3B3 /* Debug */,
+				F6848E78C6A7B3C555D4508E39788C82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF3B93D659B94B60DC58483A7A6F8FAF /* Build configuration list for PBXNativeTarget "Pods-DCRadialGraph_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC78C4F9F0ECA39B673FE51E1192BB81 /* Debug */,
+				64315AD41AD44A93DD76917181690C14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

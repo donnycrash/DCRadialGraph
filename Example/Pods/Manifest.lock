@@ -1,0 +1,14 @@
+PODS:
+  - DCRadialGraph (0.1.0)
+
+DEPENDENCIES:
+  - DCRadialGraph (from `../`)
+
+EXTERNAL SOURCES:
+  DCRadialGraph:
+    :path: ../
+
+SPEC CHECKSUMS:
+  DCRadialGraph: 482bce8abb48b96f0e848a6d7761f806d2151272
+
+COCOAPODS: 0.38.2

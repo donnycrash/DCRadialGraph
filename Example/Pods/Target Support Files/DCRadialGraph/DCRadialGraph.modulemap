@@ -1,0 +1,6 @@
+framework module DCRadialGraph {
+  umbrella header "DCRadialGraph-umbrella.h"
+
+  export *
+  module * { export * }
+}
