@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -9,23 +10,108 @@
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="DCRadialGraph_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                        <viewControllerLayoutGuide type="top" id="UGt-4B-GUT"/>
+                        <viewControllerLayoutGuide type="bottom" id="YPy-RU-Obm"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c3b-bX-pvB" customClass="DCRadialGraph" customModule="DCRadialGraph">
-                                <rect key="frame" x="172" y="66" width="257" height="216"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c3b-bX-pvB" customClass="DCRadialGraph" customModule="DCRadialGraph">
+                                <rect key="frame" x="60" y="40" width="201" height="201"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="c3b-bX-pvB" secondAttribute="height" multiplier="1:1" id="afn-6v-6mm"/>
+                                    <constraint firstAttribute="width" constant="201" id="x09-3h-ZvT"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="totalSegments">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="counter">
+                                        <integer key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="arcOffset">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autoLabel" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="arcColor">
+                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="arcBgColor">
+                                        <color key="value" red="1" green="1" blue="1" alpha="0.28999999999999998" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="arcWidth">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vYs-Lm-f1w">
+                                <rect key="frame" x="0.0" y="376" width="320" height="192"/>
+                                <subviews>
+                                    <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OeO-1X-ch2" customClass="DCRadialGraph" customModule="DCRadialGraph">
+                                        <rect key="frame" x="85" y="21" width="150" height="150"/>
+                                        <color key="backgroundColor" red="1" green="0.40170390839999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="tintColor" red="1" green="0.0" blue="0.69772736049999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="OeO-1X-ch2" secondAttribute="height" multiplier="1:1" id="atO-NM-TzE"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="totalSegments">
+                                                <integer key="value" value="100"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="counter">
+                                                <integer key="value" value="100"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="arcColor">
+                                                <color key="value" red="1" green="0.0" blue="0.69772736049999995" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="autoLabel" value="NO"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="clockwise" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                                <real key="value" value="4"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="arcBgColor">
+                                                <color key="value" red="0.80000001192092896" green="1" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="arcOffset">
+                                                <real key="value" value="13"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="centerX" secondItem="OeO-1X-ch2" secondAttribute="centerX" id="4XD-1n-Isr"/>
+                                    <constraint firstAttribute="height" constant="192" id="6yS-ya-NnQ"/>
+                                    <constraint firstItem="OeO-1X-ch2" firstAttribute="centerY" secondItem="vYs-Lm-f1w" secondAttribute="centerY" id="lxN-BV-tbT"/>
+                                    <constraint firstItem="OeO-1X-ch2" firstAttribute="top" secondItem="vYs-Lm-f1w" secondAttribute="top" constant="21" id="zoU-F6-nCq"/>
+                                </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.54698148190871265" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="vYs-Lm-f1w" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="3uA-dH-QZj"/>
+                            <constraint firstAttribute="trailing" secondItem="vYs-Lm-f1w" secondAttribute="trailing" id="ASi-dB-ico"/>
+                            <constraint firstItem="YPy-RU-Obm" firstAttribute="top" secondItem="vYs-Lm-f1w" secondAttribute="bottom" id="EJZ-Mj-8Ht"/>
+                            <constraint firstAttribute="centerX" secondItem="c3b-bX-pvB" secondAttribute="centerX" constant="-0.5" id="IJG-ub-dkI"/>
+                            <constraint firstItem="c3b-bX-pvB" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="40" id="R2N-q4-Aqx"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="bottomGraph" destination="OeO-1X-ch2" id="oeC-aN-pgf"/>
+                        <outlet property="topGraph" destination="c3b-bX-pvB" id="CSu-5W-vaW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="181" y="366"/>
         </scene>
     </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
 </document>

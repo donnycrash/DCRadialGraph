@@ -27,11 +27,14 @@ import DCRadialGraph
 
 class ViewController: UIViewController {
   
+  @IBOutlet weak var bottomGraph: DCRadialGraph!
+  @IBOutlet weak var topGraph: DCRadialGraph!
 
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    
+    topGraph.counter = 7
+    bottomGraph.counter = 12
     
   }
   

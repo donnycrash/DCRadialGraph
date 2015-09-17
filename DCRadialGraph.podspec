@@ -17,10 +17,10 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!  
   s.description      = <<-DESC
-DCRadialGraph is an IBDesignable subclass of UIView which allows you to easily create animated radial graphs. It's really easily customised, change the animation direction, add an 'auto label' displaying the percent, change colors and stroke widths.
+DCRadialGraph is an IBDesignable subclass of UIView which allows you to create animated radial graphs. It's really easily customised, change the animation direction, add an 'auto label' displaying the percent, change colors and stroke widths.
                        DESC
 
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/DCRadialGraph"
+  s.homepage         = "https://github.com/donnycrash/DCRadialGraph"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "Donovan Crewe" => "donovan@clevertech.biz" }

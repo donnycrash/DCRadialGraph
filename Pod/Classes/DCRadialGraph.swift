@@ -8,8 +8,8 @@
 
 @IBDesignable public class DCRadialGraph: UIView {
   
-  @IBInspectable var totalSegments: Int = 8
-  @IBInspectable var counter: Int = 2 {
+  @IBInspectable public var totalSegments: Int = 8
+  @IBInspectable public var counter: Int = 2 {
     didSet {
       if counter <= totalSegments {
         animate()
@@ -20,9 +20,11 @@
     }
   }
   
+  private var label = UILabel()
+  
   @IBInspectable var arcOffset: CGFloat = 0.0
-  @IBInspectable var arcColor: UIColor = UIColor.blueColor()
-  @IBInspectable var arcBgColor: UIColor = UIColor.orangeColor()
+  @IBInspectable var arcColor: UIColor = UIColor(red:0.00, green:0.48, blue:1.00, alpha:1.0)
+  @IBInspectable var arcBgColor: UIColor = UIColor(red:0.94, green:0.94, blue:0.94, alpha:1.0)
   @IBInspectable var arcWidth: CGFloat = 3
   
   private var segment:CAShapeLayer?
@@ -49,14 +51,14 @@
   }
   
   func setup() {
+    updateConstraints()
     // Setup Auto label
     if autoLabel {
       addAutoLabel()
     }
-    backgroundColor = UIColor.clearColor()
     // Graph Generation
     segment = CAShapeLayer()
-    frame = CGRectMake(frame.origin.x, frame.origin.y, frame.width, frame.width);
+   // frame = CGRectMake(frame.origin.x, frame.origin.y, frame.width, frame.width);
     var backgroundLayer = CAShapeLayer()
     self.backgroundColor = UIColor.clearColor()
     let center = CGPoint(x:bounds.width/2, y: bounds.height/2)
@@ -83,6 +85,7 @@
   }
   
   func animate(){
+    updateText()
     let center = CGPoint(x:bounds.width/2, y: bounds.height/2)
     let arcLengthPerSegment = 2 * CGFloat(M_PI) / CGFloat(totalSegments)
     let segmentEndAngle = clockwise ? arcLengthPerSegment * CGFloat(counter) * -1 : arcLengthPerSegment * CGFloat(counter)
@@ -115,14 +118,22 @@
   }
   
   func addAutoLabel(){
-    var label = UILabel()
-    var percent = Int(Float(counter)/Float(totalSegments) * 100)
     label.textColor = tintColor
     label.font = UIFont(name: percentFont.fontName, size: frame.height/2)
-    label.frame = CGRectMake(0, frame.height/2 - label.font.lineHeight/2, frame.width, label.font.lineHeight)
+    label.frame = CGRectMake(0, bounds.height/6, bounds.width, label.font.lineHeight)
     label.textAlignment = NSTextAlignment.Center
-    label.text = "\(percent)"
+    var sublabel = UILabel(frame: CGRectMake(label.bounds.origin.x, label.bounds.height - label.font.lineHeight/6, label.frame.width, label.font.lineHeight/6))
+    sublabel.font = UIFont(name: percentFont.fontName, size: label.font.lineHeight/5)
+    sublabel.text = "PERCENT"
+    sublabel.textAlignment = label.textAlignment
+    sublabel.textColor = label.textColor
+    label.addSubview(sublabel)
     addSubview(label)
     bringSubviewToFront(label)
+  }
+  
+  private func updateText(){
+    var percent = Int(Float(counter)/Float(totalSegments) * 100)
+    label.text = "\(percent)"
   }
 }
