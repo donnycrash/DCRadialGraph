@@ -22,20 +22,16 @@
   
   private var label = UILabel()
   
-  @IBInspectable var arcOffset: CGFloat = 0.0
-  @IBInspectable var arcColor: UIColor = UIColor(red:0.00, green:0.48, blue:1.00, alpha:1.0)
-  @IBInspectable var arcBgColor: UIColor = UIColor(red:0.94, green:0.94, blue:0.94, alpha:1.0)
+  @IBInspectable public var arcOffset: CGFloat = 0.0
+  @IBInspectable public var arcColor: UIColor = UIColor(red:0.00, green:0.48, blue:1.00, alpha:1.0)
+  @IBInspectable public var arcBgColor: UIColor = UIColor(red:0.94, green:0.94, blue:0.94, alpha:1.0)
   @IBInspectable var arcWidth: CGFloat = 3
   
   private var segment:CAShapeLayer?
-  @IBInspectable var duration:CGFloat = 3.0
-  @IBInspectable var clockwise:Bool = false
-  @IBInspectable var percentFont:UIFont = UIFont(name: "HelveticaNeue-UltraLight", size: 33)!
-  @IBInspectable var autoLabel:Bool = true
-  
-  override public func awakeFromNib() {
-    setup()
-  }
+  @IBInspectable public var duration: CGFloat = 3.0
+  @IBInspectable public var clockwise: Bool = false
+  @IBInspectable public var percentFont: UIFont = UIFont(name: "HelveticaNeue-UltraLight", size: 33)!
+  @IBInspectable public var autoLabel: Bool = true
   
   override public func prepareForInterfaceBuilder() {
     setup()
@@ -43,28 +39,33 @@
   
   override public init(frame: CGRect) {
     super.init(frame: frame)
-    setup()
   }
-
+  
   required public init(coder aDecoder: NSCoder) {
     super.init(coder: aDecoder)
   }
   
+  #if !TARGET_INTERFACE_BUILDER
+  override public func layoutSubviews() {
+    setup()
+  }
+  #endif
+  
+  var hasBgLayer = false
+  
   func setup() {
-    updateConstraints()
-    // Setup Auto label
+    
     if autoLabel {
       addAutoLabel()
     }
-    // Graph Generation
+    
     segment = CAShapeLayer()
-   // frame = CGRectMake(frame.origin.x, frame.origin.y, frame.width, frame.width);
     var backgroundLayer = CAShapeLayer()
     self.backgroundColor = UIColor.clearColor()
     let center = CGPoint(x:bounds.width/2, y: bounds.height/2)
     let radius: CGFloat = max(bounds.width, bounds.height)
-    var endAngle:CGFloat = CGFloat(2 * M_PI)
-    var startAngle:CGFloat = 0
+    var endAngle: CGFloat = CGFloat(2 * M_PI)
+    var startAngle: CGFloat = 0
     
     backgroundLayer.path = UIBezierPath(arcCenter: center,
       radius: radius/2 - arcWidth/2,
@@ -74,13 +75,14 @@
     backgroundLayer.fillColor = UIColor.clearColor().CGColor
     backgroundLayer.lineWidth = arcWidth
     backgroundLayer.strokeColor = arcBgColor.CGColor
-    
-    self.layer.addSublayer(backgroundLayer)
-    
-    segment?.fillColor = UIColor.clearColor().CGColor
-    segment?.lineWidth = arcWidth
-    segment?.strokeColor = arcColor.CGColor
-    self.layer.addSublayer(segment)
+    if !hasBgLayer {
+      self.layer.addSublayer(backgroundLayer)
+      segment?.fillColor = UIColor.clearColor().CGColor
+      segment?.lineWidth = arcWidth
+      segment?.strokeColor = arcColor.CGColor
+      self.layer.addSublayer(segment)
+      hasBgLayer = true
+    }
     animate()
   }
   
@@ -109,10 +111,11 @@
         drawAnimation?.toValue = 0
         drawAnimation?.fromValue = 1
       }
-      drawAnimation?.duration = CFTimeInterval(duration)
+      var d = duration
+      drawAnimation?.duration = CFTimeInterval(d)
       drawAnimation?.removedOnCompletion = true
       drawAnimation?.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
-      
+      drawAnimation?.delegate = self
       segment?.addAnimation(drawAnimation, forKey: "drawCircleAnimation")
     #endif
   }
