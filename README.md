@@ -7,8 +7,7 @@
 
 ##### DCRadialGraph is a good looking, easy to use, drop in radial/circular graph view
 
-![GitHub Logo](https://github.com/donnycrash/DCRadialGraph/wiki/radial.gif)
-Format: ![Alt Text](url)
+![Radial Animation](https://github.com/donnycrash/DCRadialGraph/wiki/radial.gif)
 
 
 ## Example
